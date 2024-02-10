@@ -1,6 +1,7 @@
 
 import plotly.express as px
 import pandas as pd
+import plotly.io as io
 
 indices = [1, 2, 3, 4]
 amostras = [[1, 4, 2, 3], [2, 8, 4, 6], [4, 16, 8, 12]]
@@ -14,5 +15,6 @@ fig.data[2].name = 'Amostra C'
 
 #fig.update_layout(showlegend=False) # tira a lengenda ao lado do gráfico
 
+#io.write_image(fig , 'graficolinha.png' )
 
 fig.show()
